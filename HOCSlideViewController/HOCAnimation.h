@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  HOCAnimation.h
 //  HOCSlideViewController
 //
 //  Created by HoCooler on 16/3/22.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface HOCAnimation : NSObject <UIViewControllerAnimatedTransitioning>
 
 @end
-

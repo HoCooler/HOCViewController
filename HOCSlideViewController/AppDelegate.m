@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "HOCSlideViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +19,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    HOCSlideViewController *homeVC = [HOCSlideViewController new];
+    self.window.rootViewController = homeVC;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
