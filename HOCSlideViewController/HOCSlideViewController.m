@@ -69,56 +69,8 @@
 
 - (void)slideViewController:(id)sender
 {
-    if (![self isViewLoaded]) {
-        return;
-    }
-    BOOL goRight = YES;
-    UIButton *clickButton = (UIButton *)sender;
-    if (clickButton.tag == 1) {
-        goRight = YES;
-    } else {
-        goRight = NO;
-    }
-    
-    UIViewController *fromVC, *toVC;
-    if (goRight) {
-        fromVC = self.leftViewController;
-        toVC = self.rightViewController;
-    } else {
-        fromVC = self.rightViewController;
-        toVC = self.leftViewController;
-    }
-    
-    //ViewController transformation
-//    [fromVC willMoveToParentViewController:nil];
-//    [fromVC.view removeFromSuperview];
-//    [fromVC removeFromParentViewController];
-//    
-//    [self addChildViewController:toVC];
-//    [self.view addSubview:toVC.view];
-//    [toVC didMoveToParentViewController:self];
-    
-    //Use Animation
-    id<UIViewControllerAnimatedTransitioning> animator = nil;
-    
-    BOOL isSlideAnimation = NO;
-    BOOL isSlideContext = YES;
-    
-    if (isSlideAnimation) {
-        animator = [HOCSlideAnimation new];
-    } else {
-        animator = [HOCAnimation new];
-    }
-    
-    if (isSlideContext) {
-        HOCSliceTransitionContext *transitionContext = [[HOCSliceTransitionContext alloc] initWithFromViewController:fromVC toViewController:toVC goingRight:goRight];
-        ((HOCSliceTransitionContext *)transitionContext).margin = 250;
-        [animator animateTransition:transitionContext];
-    } else {
-       TransitionContext *transitionContext = [[TransitionContext alloc] initWithFromViewController:fromVC toViewController:toVC goingRight:goRight];
-        [animator animateTransition:transitionContext];
-    }
-    
+	[NSException raise:@"Error"
+				format:@"The subclass should implement the method of slideViewController"];
 }
 @end
 

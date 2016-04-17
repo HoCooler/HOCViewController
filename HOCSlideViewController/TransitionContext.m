@@ -22,7 +22,7 @@
 
 @implementation TransitionContext
 
-- (instancetype)initWithFromViewController:(UIViewController *)fromViewController toViewController:(UIViewController *)toViewController goingRight:(BOOL)goingRight {
+- (instancetype)initWithFromViewController:(UIViewController *)fromViewController toViewController:(UIViewController *)toViewController {
     NSAssert ([fromViewController isViewLoaded] && fromViewController.view.superview, @"The fromViewController view must reside in the container view upon initializing the transition context.");
     
     if ((self = [super init])) {
@@ -34,10 +34,11 @@
                                         };
         
         // Set the view frame properties which make sense in our specialized ContainerViewController context. Views appear from and disappear to the sides, corresponding to where the icon buttons are positioned. So tapping a button to the right of the currently selected, makes the view disappear to the left and the new view appear from the right. The animator object can choose to use this to determine whether the transition should be going left to right, or right to left, for example.
-        CGFloat travelDistance = (goingRight ? -self.containerView.bounds.size.width : self.containerView.bounds.size.width);
+       
+		CGFloat width = self.containerView.bounds.size.width;
         self.privateDisappearingFromRect = self.privateAppearingToRect = self.containerView.bounds;
-        self.privateDisappearingToRect = CGRectOffset (self.containerView.bounds, travelDistance, 0);
-        self.privateAppearingFromRect = CGRectOffset (self.containerView.bounds, -travelDistance, 0);
+        self.privateDisappearingToRect = CGRectOffset (self.containerView.bounds, width, 0);
+        self.privateAppearingFromRect = CGRectOffset (self.containerView.bounds, -width, 0);
     }
     
     return self;

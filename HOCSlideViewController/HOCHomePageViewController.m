@@ -22,7 +22,7 @@ static NSString *kDefaultCellIdentifier = @"DefaultCellIdentifier";
 	
 	self.navigationItem.title = @"slideView Demo";
 	
-	self.slideViewArray = [[NSArray alloc] initWithObjects:@"simpleSlideViewWithFrame", @"viewControllerTransitionExample", @"slideViewWithTransition", @"HOCSlide", nil];
+	self.slideViewArray = [[NSArray alloc] initWithObjects:@"simpleSlideViewWithFrame", @"viewControllerTransitionExample", @"slideViewWithTransition", nil];
 	self.listView = [[UITableView alloc] initWithFrame:CGRectZero];
 	self.listView.delegate = self;
 	self.listView.dataSource = self;

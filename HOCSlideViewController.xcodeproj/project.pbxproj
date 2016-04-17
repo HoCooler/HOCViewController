@@ -22,6 +22,7 @@
 		1C8DD7311CC3123A000BE43E /* HOCHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DD7301CC3123A000BE43E /* HOCHomePageViewController.m */; };
 		1C8DD7341CC3B162000BE43E /* simpleSlideViewWithFrameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DD7331CC3B162000BE43E /* simpleSlideViewWithFrameViewController.m */; };
 		1C8DD7371CC3CA10000BE43E /* viewControllerTransitionExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DD7361CC3CA10000BE43E /* viewControllerTransitionExampleViewController.m */; };
+		1C8DD73A1CC3FB2A000BE43E /* slideViewWithTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DD7391CC3FB2A000BE43E /* slideViewWithTransitionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,8 @@
 		1C8DD7331CC3B162000BE43E /* simpleSlideViewWithFrameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = simpleSlideViewWithFrameViewController.m; sourceTree = "<group>"; };
 		1C8DD7351CC3CA10000BE43E /* viewControllerTransitionExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = viewControllerTransitionExampleViewController.h; sourceTree = "<group>"; };
 		1C8DD7361CC3CA10000BE43E /* viewControllerTransitionExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = viewControllerTransitionExampleViewController.m; sourceTree = "<group>"; };
+		1C8DD7381CC3FB2A000BE43E /* slideViewWithTransitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = slideViewWithTransitionViewController.h; sourceTree = "<group>"; };
+		1C8DD7391CC3FB2A000BE43E /* slideViewWithTransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = slideViewWithTransitionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +148,8 @@
 				1C8DD7331CC3B162000BE43E /* simpleSlideViewWithFrameViewController.m */,
 				1C8DD7351CC3CA10000BE43E /* viewControllerTransitionExampleViewController.h */,
 				1C8DD7361CC3CA10000BE43E /* viewControllerTransitionExampleViewController.m */,
+				1C8DD7381CC3FB2A000BE43E /* slideViewWithTransitionViewController.h */,
+				1C8DD7391CC3FB2A000BE43E /* slideViewWithTransitionViewController.m */,
 			);
 			path = HOCSlideViewController;
 			sourceTree = "<group>";
@@ -315,6 +320,7 @@
 				1C8DD7311CC3123A000BE43E /* HOCHomePageViewController.m in Sources */,
 				1C0700B31CA147C100E80F38 /* HOCSliceTransitionContext.m in Sources */,
 				1C0700AD1CA13D7500E80F38 /* HOCSlideAnimation.m in Sources */,
+				1C8DD73A1CC3FB2A000BE43E /* slideViewWithTransitionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
