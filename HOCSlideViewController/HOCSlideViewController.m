@@ -14,9 +14,6 @@
 
 @interface HOCSlideViewController()
 
-@property (nonatomic, strong) UIViewController *leftViewController;
-@property (nonatomic, strong) UIViewController *rightViewController;
-
 @end
 
 @implementation HOCSlideViewController
@@ -37,7 +34,7 @@
     _leftViewController = [UIViewController new];
     UIButton *lslideButton = [UIButton new];
     [_leftViewController.view addSubview:lslideButton];
-    lslideButton.frame = CGRectMake(200, 200, 100, 50);
+    lslideButton.frame = CGRectMake(200, 200, 150, 50);
     lslideButton.backgroundColor = [UIColor blueColor];
     lslideButton.tag = 1;
     [lslideButton setTitle:@"SlideToRight" forState:UIControlStateNormal];
@@ -54,7 +51,7 @@
     UIButton *rslideButton = [UIButton new];
     rslideButton.backgroundColor = [UIColor redColor];
     [_rightViewController.view addSubview:rslideButton];
-    rslideButton.frame = CGRectMake(200, 200, 100, 50);
+    rslideButton.frame = CGRectMake(200, 200, 150, 50);
     [rslideButton setTitle:@"SlideToLeft" forState:UIControlStateNormal];
     [rslideButton addTarget:self action:@selector(slideViewController:) forControlEvents:UIControlEventTouchUpInside];
 //    [rslideButton addTarget:self action:@selector(slideViewControllerWithFrame:) forControlEvents:UIControlEventTouchUpInside];
@@ -69,27 +66,7 @@
 
 }
 
-- (void)slideViewControllerWithFrame: (id)sender
-{
-    NSInteger margin = 250;
-    if (self.rightViewController.view.frame.origin.x == 0) {
-        //左移
-        [UIView animateWithDuration:0.25 animations:^{
-            _rightViewController.view.frame = CGRectOffset(self.view.bounds, margin, 0);
-            _leftViewController.view.frame = CGRectOffset(self.view.bounds, margin - self.view.bounds.size.width, 0);
-        } completion:^(BOOL finished) {
-        }];
-        
-    }else{
-        [UIView animateWithDuration:0.25 animations:^{
-            self.rightViewController.view.frame = CGRectOffset(self.view.bounds, 0, 0);
-            self.leftViewController.view.frame = CGRectOffset(self.view.bounds, -self.view.bounds.size.width, 0);
-            
-        } completion:^(BOOL finished) {
-            
-        }];
-    }
-}
+
 - (void)slideViewController:(id)sender
 {
     if (![self isViewLoaded]) {
@@ -124,7 +101,7 @@
     //Use Animation
     id<UIViewControllerAnimatedTransitioning> animator = nil;
     
-    BOOL isSlideAnimation = YES;
+    BOOL isSlideAnimation = NO;
     BOOL isSlideContext = YES;
     
     if (isSlideAnimation) {

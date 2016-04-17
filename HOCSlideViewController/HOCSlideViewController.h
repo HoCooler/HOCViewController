@@ -10,5 +10,10 @@
 
 @interface HOCSlideViewController : UIViewController
 
+@property (nonatomic, strong) UIViewController *leftViewController;
+@property (nonatomic, strong) UIViewController *rightViewController;
+
+- (void)slideViewController:(id)sender;
+
 @end
 

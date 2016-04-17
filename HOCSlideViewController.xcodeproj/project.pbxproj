@@ -19,6 +19,9 @@
 		1C0700AD1CA13D7500E80F38 /* HOCSlideAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0700AC1CA13D7500E80F38 /* HOCSlideAnimation.m */; };
 		1C0700B01CA1447200E80F38 /* TransitionContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0700AF1CA1447200E80F38 /* TransitionContext.m */; };
 		1C0700B31CA147C100E80F38 /* HOCSliceTransitionContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0700B21CA147C100E80F38 /* HOCSliceTransitionContext.m */; };
+		1C8DD7311CC3123A000BE43E /* HOCHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DD7301CC3123A000BE43E /* HOCHomePageViewController.m */; };
+		1C8DD7341CC3B162000BE43E /* simpleSlideViewWithFrameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DD7331CC3B162000BE43E /* simpleSlideViewWithFrameViewController.m */; };
+		1C8DD7371CC3CA10000BE43E /* viewControllerTransitionExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DD7361CC3CA10000BE43E /* viewControllerTransitionExampleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,12 @@
 		1C0700AF1CA1447200E80F38 /* TransitionContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionContext.m; sourceTree = "<group>"; };
 		1C0700B11CA147C100E80F38 /* HOCSliceTransitionContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HOCSliceTransitionContext.h; sourceTree = "<group>"; };
 		1C0700B21CA147C100E80F38 /* HOCSliceTransitionContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HOCSliceTransitionContext.m; sourceTree = "<group>"; };
+		1C8DD72F1CC3123A000BE43E /* HOCHomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HOCHomePageViewController.h; sourceTree = "<group>"; };
+		1C8DD7301CC3123A000BE43E /* HOCHomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HOCHomePageViewController.m; sourceTree = "<group>"; };
+		1C8DD7321CC3B162000BE43E /* simpleSlideViewWithFrameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = simpleSlideViewWithFrameViewController.h; sourceTree = "<group>"; };
+		1C8DD7331CC3B162000BE43E /* simpleSlideViewWithFrameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = simpleSlideViewWithFrameViewController.m; sourceTree = "<group>"; };
+		1C8DD7351CC3CA10000BE43E /* viewControllerTransitionExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = viewControllerTransitionExampleViewController.h; sourceTree = "<group>"; };
+		1C8DD7361CC3CA10000BE43E /* viewControllerTransitionExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = viewControllerTransitionExampleViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +139,12 @@
 				1C0700AF1CA1447200E80F38 /* TransitionContext.m */,
 				1C0700B11CA147C100E80F38 /* HOCSliceTransitionContext.h */,
 				1C0700B21CA147C100E80F38 /* HOCSliceTransitionContext.m */,
+				1C8DD72F1CC3123A000BE43E /* HOCHomePageViewController.h */,
+				1C8DD7301CC3123A000BE43E /* HOCHomePageViewController.m */,
+				1C8DD7321CC3B162000BE43E /* simpleSlideViewWithFrameViewController.h */,
+				1C8DD7331CC3B162000BE43E /* simpleSlideViewWithFrameViewController.m */,
+				1C8DD7351CC3CA10000BE43E /* viewControllerTransitionExampleViewController.h */,
+				1C8DD7361CC3CA10000BE43E /* viewControllerTransitionExampleViewController.m */,
 			);
 			path = HOCSlideViewController;
 			sourceTree = "<group>";
@@ -293,8 +308,11 @@
 				1C0700B01CA1447200E80F38 /* TransitionContext.m in Sources */,
 				1C0700A71CA10FF500E80F38 /* HOCSlideViewController.m in Sources */,
 				1C0700771CA10FCB00E80F38 /* AppDelegate.m in Sources */,
+				1C8DD7371CC3CA10000BE43E /* viewControllerTransitionExampleViewController.m in Sources */,
 				1C0700741CA10FCB00E80F38 /* main.m in Sources */,
+				1C8DD7341CC3B162000BE43E /* simpleSlideViewWithFrameViewController.m in Sources */,
 				1C0700AA1CA13CAC00E80F38 /* HOCAnimation.m in Sources */,
+				1C8DD7311CC3123A000BE43E /* HOCHomePageViewController.m in Sources */,
 				1C0700B31CA147C100E80F38 /* HOCSliceTransitionContext.m in Sources */,
 				1C0700AD1CA13D7500E80F38 /* HOCSlideAnimation.m in Sources */,
 			);
@@ -522,6 +540,7 @@
 				1C07009E1CA10FCB00E80F38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1C07009F1CA10FCB00E80F38 /* Build configuration list for PBXNativeTarget "HOCSlideViewControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +549,7 @@
 				1C0700A11CA10FCB00E80F38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1C0700A21CA10FCB00E80F38 /* Build configuration list for PBXNativeTarget "HOCSlideViewControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +558,7 @@
 				1C0700A41CA10FCB00E80F38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
